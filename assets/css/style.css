@@ -1,0 +1,540 @@
+:root {
+  /******** color ********/
+  --color-light-dark: #1E2833;
+  --color-white: #FFFFFF;
+  --color-light-red: #D72638;
+  --color-red: #C01230;
+  --color-dark-red: #AA0C29;
+  --color-dark-maroon: #900C25;
+  --color-maroon: #7A0822;
+  --color-dark-purple: #64071F;
+  --color-purple: #4E071C;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  /* overflow-x: hidden; */
+}
+
+ul li {
+  list-style-type: none;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: var(--color-white);
+}
+
+/* Default input styles */
+input, select, textarea{
+  display: block;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  margin: 10px 0px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+/* Focus state with red border */
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-dark-red)!important;
+  outline: 0;
+}
+
+
+.gradient-card {
+  background: linear-gradient(to right, #4b0033, #c80067);
+  color: white;
+  padding: 40px 25px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 0 25px;
+}
+
+.btn svg {
+  height: 20px;
+}
+
+.otp-box {
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 20px;
+}
+
+.otp-container {
+  gap: 10px;
+}
+
+.success-icon {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.success-icon i {
+  font-size: 40px;
+  color: green;
+}
+
+
+/*====================================================
+                    Header Navbar Section CSS*
+=====================================================*/
+
+.nav-menu {
+  background-color: transparent !important;
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  top: 0;
+}
+
+.navbar .navbar-brand {
+  height: 60px;
+  width: 60px;
+  background-color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar .navbar-brand img {
+  height: 100%;
+}
+
+.navbar .nav-item .nav-link {
+  font-weight: 600;
+  margin: 0px 20px;
+  color: var(--color-light-dark);
+  border-bottom: 2px solid transparent;
+}
+
+.navbar .nav-item .nav-link.login-btn {
+  border: 1px solid var(--color-light-dark);
+
+}
+
+.navbar .nav-item .nav-link.active {
+  border-color: var(--color-dark-maroon);
+}
+
+
+
+@keyframes scroll-down {
+  from {
+    transform: translate(0, -100%)
+  }
+
+  to {
+    transfrom: translate(0, 0)
+  }
+}
+
+.navfix {
+  position: fixed;
+  top: 0;
+  background-color: var(--color-white) !important;
+  z-index: 99;
+  width: 100%;
+  right: 0;
+  animation-name: scroll-down;
+  animation-duration: 1s;
+}
+
+/*nav section close*/
+
+/*top banner section start*/
+
+.navbar .nav-item .sign-in:hover {
+  background-color: var(--color-white);
+  color: var(--color-light-dark);
+}
+
+/*====================================================
+                    Home Banner Section Section CSS*
+=====================================================*/
+#banner {
+  background-image: url('./../images/banner_img.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left center;
+  min-height: 540px;
+  display: flex;
+  align-items: center;
+}
+
+.mission-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px 30px;
+  margin: 50px 0px;
+}
+
+
+.slider-container {
+  max-width: 100%;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.slick-slide {
+  outline: none;
+}
+
+.collaborator-card {
+  background: var(--color-white);
+  border-radius: 4px;
+  padding: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #adb5bd;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.slick-dots li button:before {
+  font-size: 12px;
+  color: #000;
+}
+
+.slick-dots li.slick-active button:before {
+  color: #000;
+}
+
+
+#get_blood_processing .number {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  border-radius: 50%;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#get_blood_processing p {
+  font-size: 16px;
+  color: #666;
+}
+
+/*====================================================
+                    Footer Section CSS*
+=====================================================*/
+.footer {
+  background-color: var(--color-light-dark);
+  color: var(--color-white);
+  padding: 50px 5px;
+}
+
+.footer .footer-shape img {
+  width: 40px;
+}
+
+.footer .footer-shape {
+  border-bottom: 1px solid #9490909d;
+  padding-bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a {
+  color: var(--color-pure-white);
+}
+
+.footer-policy {
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 30px 10px 10px 10px;
+}
+
+.footer-inner .subscription h6 {
+  color: var(--color-white);
+  font-size: 1.5rem;
+  line-break: normal;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.footer-inner .subscription input {
+  border: 0;
+  border-bottom: 1px solid #FFD2DD;
+  color: var(--color-white);
+  padding: 15px 5px;
+  outline: 0;
+  background-color: transparent;
+  width: 100%;
+}
+
+.footer-inner .subscription .subscription-form {
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-inner .subscription .subscription-form button {
+  background-color: #FFD2DD;
+  padding: 10px 15px;
+  border-radius: 50px 50px 0px 0px / 25px 25px 25px 25px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.footer-inner .footer-submenu-title {
+  color: #FFD2DD;
+  font-size: 1.2rem;
+}
+
+.footer-submenu ul {
+  margin-left: -35px;
+}
+
+.footer-submenu ul li a {
+  margin: 5px 0px;
+  display: inline-block;
+  transition: 0.5s all ease;
+}
+
+.footer-policy .terms a {
+  margin: 0px 10px;
+  transition: 0.5s ease;
+}
+
+.footer-policy .footer-social a {
+  margin: 0px 10px;
+  font-size: 1.2rem;
+  transition: 0.5s ease;
+}
+
+.footer-submenu ul li a:hover,
+.footer-policy .terms a:hover,
+.footer-policy .footer-social a:hover {
+  color: var(--color-dark-red);
+}
+
+/*====================================================
+                    Find Donor Screen CSS*
+=====================================================*/
+
+.nav-tabs {
+  display: inline-flex;
+  justify-content: center;
+  background-color: var(--color-white);
+  border-radius: 50px;
+  box-shadow: rgba(50, 50, 93, 0.25) -15px 4px 17px 0px inset, inset rgb(255, 255, 255) -12px 16px 20px 6px;
+  margin: 0 auto;
+  overflow: hidden;
+
+}
+
+.nav-tabs .nav-link {
+  padding: 0.5rem 1.5rem;
+  color: #000;
+  font-weight: 600;
+  border: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-tabs .nav-link.active {
+  border-radius: 50px;
+  background-color: #000000;
+  color: var(--color-white);
+}
+
+.donor-card {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 20px 30px;
+  border-radius: 10px;
+}
+
+.donor-card p {
+  color: #00000099;
+}
+
+
+.donor-profile {
+  position: relative;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 20px 30px;
+}
+
+.contact-list li {
+  padding: 10px;
+}
+
+.contact-list li span {
+  display: block;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.refresh-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+}
+
+.main-coordination-contact {
+  padding: 2px 30px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  cursor: pointer;
+}
+
+.main-coordination-contact:focus {
+  box-shadow: none !important;
+}
+
+.main-coordination-contact:not(.collapsed) {
+  box-shadow: none !important;
+  background-color: transparent !important;
+}
+
+.main-coordination-contact p {
+  color: #00000099;
+}
+
+.content-box {
+  margin-left: 25px;
+}
+
+
+.donor-profile-img{
+  width: 180px;
+}
+
+.profile-details {
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 20px 0px;
+  margin: 30px 0px;
+  overflow: hidden;
+}
+
+.profile-details .inner-details {
+  border-bottom: 1px solid #524c4c28;
+  overflow: hidden;
+  transition: 0.5s ease;
+  margin-top: 3px;
+}
+
+.profile-details .inner-details p {
+  padding: 2px 15px;
+}
+
+.donation-history p {
+  color: #47494b9f;
+}
+
+
+/*====================================================
+                    Calendar CSS*
+=====================================================*/
+
+.calendar-container {
+  margin: 50px auto;
+  background: #f8f9fa;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+}
+
+.calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.calendar-header h6 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  text-align: center;
+}
+
+.calendar-grid div {
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 0.9rem;
+}
+
+.day {
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.day:hover {
+  background-color: #e2e6ea;
+}
+
+.inactive-day {
+  color: #adb5bd;
+}
+
+.active-day {
+  background-color: var(--color-dark-red);
+  color: #fff;
+}
+
+
+
+/*====================================================
+                    Responsive CSS*
+=====================================================*/
+@media only screen and (max-width: 600px) {
+
+
+  .nav-menu {
+    background-color: var(--color-white) !important;
+  }
+
+  #banner {
+    background-image: none !important;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: left center;
+    min-height: 540px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-inner .subscription input {
+    width: 85%;
+  }
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find Donor</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+    <!--Font Awesome-->
+    <script src="https://kit.fontawesome.com/b36397baf4.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Header Navbar Menu Start -->
+    <header id="nav-section">
+        <nav class="navbar navbar-expand-lg navbar-light nav-menu" id="nav">
+            <div class="container">
+                <a class="navbar-brand navbar-logo" href="#">
+                    <img src="./assets/images/logo-black.png" alt="">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="/find-donor.html">Find Blood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/donor-register.html">Register Now</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="btn btn-outline-dark ms-3" href="/donor-register.html">Login</a>
+                        </li>
+                       
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Header Navbar Menu Close -->
+    <div class="mt-5 p-5"></div>
+    <!-- Register form start -->
+    <div class="container">
+        <div class="shadow p-4 p-sm-2 mb-5 bg-body rounded">
+
+            <div class="row align-items-center">
+                <!-- Left Image Section -->
+                <div class="col-md-5 d-none d-sm-block">
+                    <img class="img-fluid rounded w-100" src="./assets/images/Gradient Panel.png" alt="Gradient Panel"
+                        style="max-height: 640px;">
+                </div>
+
+                <!-- Right Form Section -->
+                <div class="col-md-7 pe-sm-5">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8">
+                            <h5 class="mb-4 fw-bold text-center">Recipient Details</h5>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mb-sm-5">
+                        <label for="bloodGroup" class="col-sm-4 col-form-label text-first text-sm-end">Blood
+                            Group</label>
+                        <div class="col-sm-8">
+                            <select class="form-select" id="bloodGroup" aria-label="Default select example">
+                                <option selected disabled>Blood Group</option>
+                                <option value="1">A+</option>
+                                <option value="2">A-</option>
+                                <option value="3">B+</option>
+                                <option value="4">B-</option>
+                                <option value="5">AB+</option>
+                                <option value="6">AB-</option>
+                                <option value="7">O+</option>
+                                <option value="8">O-</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 mb-sm-5">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8">
+                            <button type="submit" class="btn btn-dark w-100">
+                                <span class="fw-bolder">Current Location</span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 mb-sm-5">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8 d-flex justify-content-center align-items-center">
+                            <span class="bg-white shadow-sm p-2 rounded">OR</span>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 mb-sm-5">
+                        <label for="state" class="col-sm-4 col-form-label text-first text-sm-end">Country</label>
+                        <div class="col-sm-8">
+                            <select class="form-select" id="state" aria-label="Default select example">
+                                <option selected disabled>Select</option>
+                                <option value="1">Bangladesh</option>
+                         
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="row mb-3 mb-sm-5">
+                        <label for="district" class="col-sm-4 col-form-label text-first text-sm-end">District</label>
+                        <div class="col-sm-8">
+                            <select class="form-select" id="district" aria-label="Default select example">
+                                <option selected disabled>Select</option>
+                                <option value="Barguna">Barguna</option>
+                                <option value="Barishal">Barishal</option>
+                                <option value="Bhola">Bhola</option>
+                                <option value="Jhalokati">Jhalokati</option>
+                                <option value="Patuakhali">Patuakhali</option>
+                                <option value="Pirojpur">Pirojpur</option>
+                                <option value="Bandarban">Bandarban</option>
+                                <option value="Brahmanbaria">Brahmanbaria</option>
+                                <option value="Chandpur">Chandpur</option>
+                                <option value="Chattogram">Chattogram</option>
+                                <option value="Comilla">Comilla</option>
+                                <option value="Cox's Bazar">Cox's Bazar</option>
+                                <option value="Feni">Feni</option>
+                                <option value="Khagrachari">Khagrachari</option>
+                                <option value="Lakshmipur">Lakshmipur</option>
+                                <option value="Noakhali">Noakhali</option>
+                                <option value="Rangamati">Rangamati</option>
+                                <option value="Bagerhat">Bagerhat</option>
+                                <option value="Chuadanga">Chuadanga</option>
+                                <option value="Jashore">Jashore</option>
+                                <option value="Jhenaidah">Jhenaidah</option>
+                                <option value="Khulna">Khulna</option>
+                                <option value="Kushtia">Kushtia</option>
+                                <option value="Magura">Magura</option>
+                                <option value="Meherpur">Meherpur</option>
+                                <option value="Narail">Narail</option>
+                                <option value="Satkhira">Satkhira</option>
+                                <option value="Dhaka">Dhaka</option>
+                                <option value="Faridpur">Faridpur</option>
+                                <option value="Gazipur">Gazipur</option>
+                                <option value="Gopalganj">Gopalganj</option>
+                                <option value="Jamalpur">Jamalpur</option>
+                                <option value="Kishoreganj">Kishoreganj</option>
+                                <option value="Madaripur">Madaripur</option>
+                                <option value="Manikganj">Manikganj</option>
+                                <option value="Munshiganj">Munshiganj</option>
+                                <option value="Mymensingh">Mymensingh</option>
+                                <option value="Narayanganj">Narayanganj</option>
+                                <option value="Narsingdi">Narsingdi</option>
+                                <option value="Netrokona">Netrokona</option>
+                                <option value="Rajbari">Rajbari</option>
+                                <option value="Shariatpur">Shariatpur</option>
+                                <option value="Sherpur">Sherpur</option>
+                                <option value="Tangail">Tangail</option>
+                                <option value="Bogra">Bogra</option>
+                                <option value="Joypurhat">Joypurhat</option>
+                                <option value="Naogaon">Naogaon</option>
+                                <option value="Natore">Natore</option>
+                                <option value="Nawabganj">Nawabganj</option>
+                                <option value="Pabna">Pabna</option>
+                                <option value="Rajshahi">Rajshahi</option>
+                                <option value="Sirajganj">Sirajganj</option>
+                                <option value="Dinajpur">Dinajpur</option>
+                                <option value="Gaibandha">Gaibandha</option>
+                                <option value="Kurigram">Kurigram</option>
+                                <option value="Lalmonirhat">Lalmonirhat</option>
+                                <option value="Nilphamari">Nilphamari</option>
+                                <option value="Panchagarh">Panchagarh</option>
+                                <option value="Rangpur">Rangpur</option>
+                                <option value="Thakurgaon">Thakurgaon</option>
+                                <option value="Habiganj">Habiganj</option>
+                                <option value="Maulvibazar">Maulvibazar</option>
+                                <option value="Sunamganj">Sunamganj</option>
+                                <option value="Sylhet">Sylhet</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- Proceed Button -->
+                    <div class="text-end mt-4">
+                        <button type="submit" class="btn btn-dark shadow-sm px-4 py-2">
+                            <span class="fw-bolder"> <a href="find-blood-result.html"> Proceed </a> </span>
+                            <span>
+                                <i class="fa-solid fa-chevron-right ms-2"></i>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+
+    <!-- Register form close -->
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+
+</html>

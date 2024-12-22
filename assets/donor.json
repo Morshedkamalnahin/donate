@@ -1,0 +1,53 @@
+{
+    "donors": [
+      { "name": " Nahin",
+      "address": "ABC Hospital Building, XYZ Road, Place, District, Pincode",
+      "phone": "018402223356",
+      "bloodgroup":"A+",
+      "donatelast":"3/12/2024" },
+      { "name": " Sajid",
+      "address": "ABC Hospital Building, XYZ Road, Place, District, Pincode",
+      "phone": "018402223356",
+      "bloodgroup":"A+",
+      "donatelast":"3/12/2024" },
+      { "name": " Sakib",
+      "address": "ABC Hospital Building, XYZ Road, Place, District, Pincode",
+      "phone": "018402223356",
+      "bloodgroup":"A+",
+      "donatelast":"3/12/2024" },
+      { "name": " Barua",
+      "address": "ABC Hospital Building, XYZ Road, Place, District, Pincode",
+      "phone": "018402223356",
+      "bloodgroup":"A+",
+      "donatelast":"3/12/2024" },
+      { "name": "XYZ",
+      "address": "ABC Hospital Building, XYZ Road, Place, District, Pincode",
+      "phone": "018402223356",
+      "bloodgroup":"A+",
+      "donatelast":"3/12/2024"}
+    ],
+    "bloodBanks": [
+      {
+        "name": "Rakibul Islam ",
+        "address": "ABC Hospital Building, XYZ Road, Place, District, Pincode",
+        "phone": "018402223356",
+        "bloodgroup":"A+",
+        "donatelast":"3/12/2024"
+      },
+      {
+        "name": "Jobaidul Islan",
+        "address": "ABC Hospital Building, XYZ Road, Place, District, Pincode",
+        "phone": "XXXXXXXXXX",
+        "bloodgroup":"B+",
+        "donatelast":"3/12/2024"
+      },
+      {
+        "name": "Labonno ",
+        "address": "ABC Hospital Building, XYZ Road, Place, District, Pincode",
+        "phone": "XXXXXXXXXX",
+        "bloodgroup":"B+",
+        "donatelast":"3/12/2024"
+      }
+    ]
+  }
+  
